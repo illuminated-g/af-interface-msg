@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-06-18 09:47:16" Modified_Date="2023-06-18 20:11:47" Creator="derri" Comments="" ID="35c619aa25dadc98ca7d1762d104f2ed">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-06-18 09:47:16" Modified_Date="2023-07-03 19:58:13" Creator="derri" Comments="" ID="e257975e278390b689d159fa798e6f30">
   <Library_General_Settings>
     <Package_File_Name>IlluminatedG_lib_AF_Message_as_Interface</Package_File_Name>
-    <Library_Version>1.0.0.10</Library_Version>
+    <Library_Version>1.0.1.12</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\vip</Library_Output_Folder>
@@ -30,13 +30,14 @@
       <One_Line_Description_Summary>Changes the base Message.lvclass to a LabVIEW Interface and updates the message tooling.</One_Line_Description_Summary>
       <Description>Change the base Message.lvclass in Actor Framework to an Interface. The base Message class stores no class data and is only used for method definitions but AF has existed before LabVIEW Interfaces. Changing the base Message to an interface allows using other classes as parents of messages for more flexibility in messaging capabilities.
 
-&lt;b&gt;NOTE:&lt;/b&gt; This package creates backup copies of the original AF files so they can be restored when the package is uninstalled. However, once used, this effectively becomes a one-way transition for projects once a message class changes to have another class as a parent. There is no automated tooling to return message implementations back to the original parent configuration and will need to be done manually.
+&lt;b&gt;NOTE:&lt;/b&gt; This package creates backup copies of the original AF files so they can be restored when the package is uninstalled. However, once used for a project, there is no automated tooling to return message implementations back to the original parent configuration and will need to be done manually.
 
 Shoutout to Casey May of Zyah Solutions for doing the initial test of the concept when I asked about the idea in the AF Guild Discord server.</Description>
       <Copyright/>
       <Packager>Derrick Bommarito</Packager>
       <URL>https://github.com/illuminated-g/af-interface-msg</URL>
-      <Release_Notes/>
+      <Release_Notes>1.0.1.11
+- Update message creation to work with class and interface parents (Casey May)</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
